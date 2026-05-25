@@ -1,0 +1,29 @@
+[
+  {
+    "user_id": "abcsh",
+    "name": "Abhishek",
+    "hashed_password": "12345",
+    "ticket_booked": [
+      {
+        "source": "Bangalore",
+        "destination": "Delho",
+        "date_of_travel": "2026-5-09T18:30:00Z",
+        "train": {
+          "train_id":"bash",
+          "train_no": 1232,
+          "seats": [
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0]
+          ],
+          "station": {
+            "bangalore": "13:50:00",
+            "jaipur": "13:50:00",
+            "Delhi": "13:50:00"
+          }
+        }
+      }
+    ]
+  }
+]

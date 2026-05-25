@@ -1,0 +1,44 @@
+[
+  {
+    "train_id":"bash",
+    "train_no": 1232,
+    "seats": [
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0]
+    ],
+    "station": {
+      "bangalore": "13:50:00",
+      "jaipur": "13:50:00",
+      "Delhi": "13:50:00"
+    },
+    "station": [
+      "bangalore",
+      "jaipur",
+      "delhi"
+    ]
+  },
+  {
+    "train_id":"bash",
+    "train_no": 1282,
+    "seats": [
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0]
+    ],
+    "station": {
+      "bangalore": "13:50:00",
+      "mumbai": "13:50:00",
+      "patna": "13:50:00"
+    },
+    "station": [
+      "bangalore",
+      "mumbai",
+      "patna"
+    ]
+
+  }
+
+]

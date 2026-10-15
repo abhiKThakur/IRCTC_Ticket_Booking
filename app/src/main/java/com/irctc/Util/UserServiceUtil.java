@@ -12,5 +12,4 @@ public static String hashPassword(String plainPassword){
 public static boolean checkPassword(String plainPassword, String hashPassword){
     return BCrypt.checkpw(plainPassword, hashPassword);
 }
-
 }

@@ -1,26 +1,42 @@
 plugins {
+    id 'org.springframework.boot' version '3.5.6'
+    id 'io.spring.dependency-management' version '1.1.7'
     id 'application'
 }
 
-group = 'org.example'
-version = '1.0-SNAPSHOT'
+group = 'com.irctc'
+version = '1.0.0'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.6'
-    implementation'org.mindrot:jbcrypt:0.4'
+    // Spring Boot REST API
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // JSON handling
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.18.3'
+
+    // Password hashing
+    implementation 'org.mindrot:jbcrypt:0.4'
+
+    // Testing
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 application {
-    mainClass = 'com.irctc.Main'
+    mainClass = 'com.irctc.IrctcApiApplication'
+}
+
+springBoot {
+    mainClass = 'com.irctc.IrctcApiApplication'
 }
 
 test {
     useJUnitPlatform()
+}
+
+run {
+    standardInput = System.in
 }

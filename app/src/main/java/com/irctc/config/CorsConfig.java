@@ -16,10 +16,15 @@ public class CorsConfig {
                 registry.addMapping("/api/**")
                         .allowedOrigins(
                                 "http://localhost:5173",
-                                "http://localhost:5174"
+                                "http://localhost:5174",
+                                "https://railwaygo.vercel.app"
                         )
                         .allowedMethods(
-                                "GET", "POST", "PUT", "DELETE", "OPTIONS"
+                                "GET",
+                                "POST",
+                                "PUT",
+                                "DELETE",
+                                "OPTIONS"
                         )
                         .allowedHeaders("*");
             }
